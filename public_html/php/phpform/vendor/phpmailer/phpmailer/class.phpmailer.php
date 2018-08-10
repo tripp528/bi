@@ -697,7 +697,8 @@ class PHPMailer
         if (ini_get('safe_mode') or !$this->UseSendmailOptions or is_null($params)) {
             $result = @mail($to, $subject, $body, $header);
         } else {
-            $result = @mail($to, $subject, $body, $header, $params);
+            //$result = @mail($to, $subject, $body, $header, $params);
+            $result = @mail($to, $subject, $body, $header);
         }
         return $result;
     }
