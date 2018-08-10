@@ -1,99 +1,69 @@
-
 <?php
 /**
- * PHPMailer simple contact form example.
- * If you want to accept and send uploads in your form, look at the send_file_upload example.
+ * This example shows how to handle a simple contact form.
  */
-//Import the PHPMailer class into the global namespace
+//Import PHPMailer classes into the global namespace
 use PHPMailer\PHPMailer\PHPMailer;
-require '../vendor/autoload.php';
-if (array_key_exists('to', $_POST)) {
-    $err = false;
-    $msg = '';
-    $email = '';
-    //Apply some basic validation and filtering to the subject
-    if (array_key_exists('subject', $_POST)) {
-        $subject = substr(strip_tags($_POST['subject']), 0, 255);
-    } else {
-        $subject = 'No subject given';
-    }
-    //Apply some basic validation and filtering to the query
-    if (array_key_exists('query', $_POST)) {
-        //Limit length and strip HTML tags
-        $query = substr(strip_tags($_POST['query']), 0, 16384);
-    } else {
-        $query = '';
-        $msg = 'No query provided!';
-        $err = true;
-    }
-    //Apply some basic validation and filtering to the name
-    if (array_key_exists('name', $_POST)) {
-        //Limit length and strip HTML tags
-        $name = substr(strip_tags($_POST['name']), 0, 255);
-    } else {
-        $name = '';
-    }
-    //Validate to address
-    //Never allow arbitrary input for the 'to' address as it will turn your form into a spam gateway!
-    //Substitute appropriate addresses from your own domain, or simply use a single, fixed address
-    if (array_key_exists('to', $_POST) and in_array($_POST['to'], ['sales', 'support', 'accounts'])) {
-        $to = $_POST['to'] . '@example.com';
-    } else {
-        $to = 'support@example.com';
-    }
-    //Make sure the address they provided is valid before trying to use it
-    if (array_key_exists('email', $_POST) and PHPMailer::validateAddress($_POST['email'])) {
-        $email = $_POST['email'];
-    } else {
-        $msg .= "Error: invalid email address provided";
-        $err = true;
-    }
-    if (!$err) {
-        $mail = new PHPMailer;
-        $mail->isSMTP();
-        $mail->Host = 'localhost';
-        $mail->Port = 2500;
-        $mail->CharSet = 'utf-8';
-        //It's important not to use the submitter's address as the from address as it's forgery,
-        //which will cause your messages to fail SPF checks.
-        //Use an address in your own domain as the from address, put the submitter's address in a reply-to
-        $mail->setFrom('contact@example.com', (empty($name) ? 'Contact form' : $name));
-        $mail->addAddress($to);
-        $mail->addReplyTo($email, $name);
-        $mail->Subject = 'Contact form: ' . $subject;
-        $mail->Body = "Contact form submission\n\n" . $query;
+$msg = '';
+//Don't run this unless we're handling a form submission
+if (array_key_exists('email', $_POST)) {
+    date_default_timezone_set('Etc/UTC');
+    require '../../vendor/autoload.php';
+    //Create a new PHPMailer instance
+    $mail = new PHPMailer;
+    //Tell PHPMailer to use SMTP - requires a local mail server
+    //Faster and safer than using mail()
+    $mail->isSMTP();
+    $mail->Host = 'localhost';
+    $mail->Port = 25;
+    //Use a fixed address in your own domain as the from address
+    //**DO NOT** use the submitter's address here as it will be forgery
+    //and will cause your messages to fail SPF checks
+    $mail->setFrom('from@example.com', 'First Last');
+    //Send the message to yourself, or whoever should receive contact for submissions
+    $mail->addAddress('jgordon@circadence.com', 'John Doe');
+    //Put the submitter's address in a reply-to header
+    //This will fail if the address provided is invalid,
+    //in which case we should ignore the whole request
+    if ($mail->addReplyTo($_POST['email'], $_POST['name'])) {
+        $mail->Subject = 'PHPMailer contact form';
+        //Keep it simple - don't use HTML
+        $mail->isHTML(false);
+        //Build a simple message body
+        $mail->Body = <<<EOT
+Email: {$_POST['email']}
+Name: {$_POST['name']}
+Message: {$_POST['message']}
+EOT;
+        //Send the message, check for errors
         if (!$mail->send()) {
-            $msg .= "Mailer Error: " . $mail->ErrorInfo;
+            //The reason for failing to send will be in $mail->ErrorInfo
+            //but you shouldn't display errors to users - process the error, log it on your server.
+            $msg = 'Sorry, something went wrong. Please try again later.';
         } else {
-            $msg .= "Message sent!";
+            $msg = 'Message sent! Thanks for contacting us.';
         }
+    } else {
+        $msg = 'Invalid email address, message ignored.';
     }
-} ?>
+}
+?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>PHPMailer Contact Form</title>
+    <meta charset="UTF-8">
+    <title>Contact form</title>
 </head>
 <body>
 <h1>Contact us</h1>
-<?php if (empty($msg)) { ?>
-    <form method="post">
-        <label for="to">Send to:</label>
-        <select name="to" id="to">
-            <option value="sales">Sales</option>
-            <option value="support" selected="selected">Support</option>
-            <option value="accounts">Accounts</option>
-        </select><br>
-        <label for="subject">Subject: <input type="text" name="subject" id="subject" maxlength="255"></label><br>
-        <label for="name">Your name: <input type="text" name="name" id="name" maxlength="255"></label><br>
-        <label for="email">Your email address: <input type="email" name="email" id="email" maxlength="255"></label><br>
-        <label for="query">Your question:</label><br>
-        <textarea cols="30" rows="8" name="query" id="query" placeholder="Your question"></textarea><br>
-        <input type="submit" value="Submit">
-    </form>
-<?php } else {
-    echo $msg;
+<?php if (!empty($msg)) {
+    echo "<h2>$msg</h2>";
 } ?>
+<form method="POST">
+    <label for="name">Name: <input type="text" name="name" id="name"></label><br>
+    <label for="email">Email address: <input type="email" name="email" id="email"></label><br>
+    <label for="message">Message: <textarea name="message" id="message" rows="8" cols="20"></textarea></label><br>
+    <input type="submit" value="Send">
+</form>
 </body>
 </html>
