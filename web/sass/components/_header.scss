@@ -1,0 +1,29 @@
+header {
+  z-index: 1;
+}
+
+nav ul a {
+  color: #444;
+}
+
+nav {
+    height: $navHeight;
+    line-height: $navHeight;
+}
+
+nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
+    height: $navHeight;
+    line-height: $navHeight;
+}
+
+nav .button-collapse i {
+    height: $navHeight;
+    line-height: $navHeight;
+}
+
+@media only screen and (min-width: 601px){
+    nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+        height: $navHeight;
+        line-height: $navHeight;
+    }
+}

@@ -1,0 +1,31 @@
+#modal1 {
+  //width: 600px;
+}
+
+#modal-x {
+  position:absolute;
+  top:0;
+  right:0;
+}
+
+.modal {
+
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: #fafafa;
+  padding: 0;
+  max-height: 90%;
+  width: 60%;
+  margin: auto;
+  overflow-y: auto;
+}
+@media only screen and (max-width: 992px) {
+  .modal {
+    width: 100%;
+    max-width: 595px;
+    maxheight: 100%;
+    top: 0%;
+  }
+}

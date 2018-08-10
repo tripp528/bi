@@ -1,0 +1,48 @@
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 100%;
+}
+@media #{$medium-and-up} {
+  .container {
+    width: 85%;
+  }
+}
+@media #{$large-and-up} {
+  .container {
+    width: 70%;
+  }
+}
+
+.parallax-container {
+  min-height: 100px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+
+.no-pad {
+  padding:0;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.col.no-pad {
+  padding:0;
+}
+
+// Responsive Videos
+.main-video-container {
+  margin-bottom: 5vh;
+}
+
+#purpose {
+  padding: 5vh;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.min-height-1 {   min-height: 100px; }.min-height-2 {   min-height: 200px; }.min-height-3 {   min-height: 300px; }.min-height-4 {   min-height: 400px; }
+.min-height-5 {   min-height: 500px; }.min-height-6 {   min-height: 600px; }.min-height-7 {   min-height: 700px; }.min-height-8 {   min-height: 800px; }.min-height-9 { min-height: 900px; }.min-height-10 { min-height: 1000px; }

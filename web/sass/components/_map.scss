@@ -1,0 +1,20 @@
+#mapRow {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#mapContainer {
+  height: inherit;
+  padding:0;
+}
+
+#mapid {
+  //width: 600px;
+  height: 500px;
+  padding: 0;
+  font-size: 0;
+}
+
+.leaflet-bottom.leaflet-right {
+  display: none;
+}

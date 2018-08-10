@@ -1,0 +1,31 @@
+BI CHECKLIST
+
+
+TABS:
+  Tire Disposal
+  Sustainability
+  News (make modifiable easily)
+  Our Team
+    vids
+
+COMPONENTS:
+  Counter for how many pounds we've saved people
+  Calculator for how much you could save the world
+  Particle somewhere
+
+PRODUCTS:
+  BolderBlack
+  Oil
+  Rubber
+
+PEOPLE:
+  Investors
+  buy bolder black
+  buy oil
+  tire disposal
+
+INSPIRATION:
+  black bear carbon
+  PRTI
+  Ecolomondo
+  (particle.js)

@@ -1,0 +1,17 @@
+h6 {
+  font-weight: bold;
+}
+
+#purpose {
+  background-color: hsl(0,0,100);
+  h2 {
+    color: hsl(0,0,20);
+    margin: 0;
+    font-style: italic;
+    text-align: center;
+
+    b {
+      color: hsl(170,50,50)
+    }
+  }
+}
