@@ -1,20 +1,16 @@
 <!DOCTYPE html>
 
-<div class="parallax-container valign-wrapper">
-  <div class="container " id="purpose">
-    <h2>Making massive environmental impacts through technology
-      and products that you <b>use every day.</b></h2>
-  </div>
-  <div class="parallax"><img src="img/background/smoke2/v2.png" alt="Unsplashed background img 1"></div>
+<div class="container center impact-message">
+  <h2><b>100,000</b><br/>Saved</h2>
 </div>
 
-<div class="parallax-container ">
-    <!-- video -->
-    <div class="container ">
-      <div class="container main-video-container">
+<div class="container ">
+    <div class="row no-margin">
+      <!-- video src="https://player.vimeo.com/video/153284248"-->
+      <div class="col s12 m4 offset-m4 main-video-container">
         <div class="video-container z-depth-5">
           <iframe
-            src="https://player.vimeo.com/video/153284248"
+            src=""
             width="1000px"
             height="1000px"
             frameborder="0"
@@ -25,8 +21,11 @@
         </div>
       </div>
     </div>
+</div>
 
-  <div class="parallax"><img src="img/background/smoke2/v2.png" alt="Unsplashed background img 1"></div>
+<div class="container center impact-message">
+  <h2>Making massive environmental impacts through technology
+    and products that you <b>use every day.</b></h2>
 </div>
 
 <!-- Main container -->

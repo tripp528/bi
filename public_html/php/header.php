@@ -7,7 +7,6 @@
         <!-- CHANGE LOGO IMAGE -->
         <img src="img/logos/bi_LOGO.png" class="responsive-img" />
       </a>
-
       <ul class="right hide-on-med-and-down height-inherit">
         <!-- BUTTONS -->
         <li><a href="index.php?page=home">Home</a></li>
@@ -54,4 +53,5 @@
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
   </nav>
+
 </header>
