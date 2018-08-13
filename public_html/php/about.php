@@ -9,7 +9,7 @@
             <img src="img/bolderBlackSample.png">
           </div>
           <div class="card-action center black">
-            <a class=" white-text" href="index.php?page=bb">BolderBlack</a>
+            <a class=" white-text" href="index.php?page=bb">Sustainability</a>
           </div>
         </div>
       </div>
@@ -19,7 +19,7 @@
             <img src="img/oilDrop.png">
           </div>
           <div class="card-action center black">
-            <a class=" white-text" href="#">Oil</a>
+            <a class=" white-text" href="#">News</a>
           </div>
         </div>
       </div>
@@ -31,7 +31,7 @@
             <img src="img/big_tire.png">
           </div>
           <div class="card-action center black">
-            <a class=" white-text" href="#">Tire Disposal</a>
+            <a class=" white-text" href="#">Our Team</a>
           </div>
         </div>
       </div>

@@ -10,9 +10,10 @@
       <ul class="right hide-on-med-and-down height-inherit">
         <!-- BUTTONS -->
         <li><a href="index.php?page=home">Home</a></li>
-        <li><a href="index.php?page=products">Products</a></li>
+        <li><a href="index.php?page=products">Products & Services</a></li>
         <li><a href="index.php?page=facility">Facility</a></li>
         <li><a href="index.php?page=investors">Investors</a></li>
+        <li><a href="index.php?page=about">About Us</a></li>
         <li><a href="index.php?page=contact">Contact</a></li>
         <!-- SOCIAL -->
         <li class="socialContainer height-inherit">
@@ -36,11 +37,11 @@
       <ul id="nav-mobile" class="sidenav">
         <!-- MOBILE BUTTONS -->
         <li><a href="index.php?page=home">Home</a></li>
-        <li><a href="index.php?page=products">Products</a></li>
+        <li><a href="index.php?page=products">Products & Services</a></li>
         <li><a href="index.php?page=facility">Facility</a></li>
         <li><a href="index.php?page=investors">Investors</a></li>
+        <li><a href="index.php?page=about">About Us</a></li>
         <li><a href="index.php?page=contact">Contact</a></li>
-
         <!-- SOCIAL -->
         <li class="socialContainer"><a class="center"
           target="_blank"

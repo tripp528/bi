@@ -45,8 +45,16 @@
     case 'investors':
       include 'php/investors.php';
       break;
+    case 'about':
+      include 'php/about.php';
+      break;
     case 'contact':
       include 'php/contact.php';
+      break;
+
+    // product pages
+    case 'bb':
+      include 'php/bb.php';
       break;
     default:
       include 'php/home.php';
