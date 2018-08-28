@@ -1,40 +1,16 @@
 <!DOCTYPE html>
 
-<div id="products" class="container min-height-7 valign-wrapper">
-  <div class="container">
-    <div class="row no-pad-bot no-margin">
-      <div class="col s12 m4 offset-m2 z-depth-2">
-        <div class="card ">
-          <div class="card-image container">
-            <img src="img/bolderBlackSample.png">
-          </div>
-          <div class="card-action center black">
-            <a class=" white-text" href="index.php?page=bb">Sustainability</a>
-          </div>
-        </div>
-      </div>
-      <div class="col s12 m4 z-depth-2">
-        <div class="card ">
-          <div class="card-image container">
-            <img src="img/oilDrop.png">
-          </div>
-          <div class="card-action center black">
-            <a class=" white-text" href="#">News</a>
-          </div>
-        </div>
-      </div>
+<div class="aboutTabs container ">
+  <div class="row">
+    <div class="col s12">
+      <ul class="tabs">
+        <li class="tab col s4"><a href="#sustainability">Sustainability</a></li>
+        <li class="tab col s4"><a class="active" href="#news">News</a></li>
+        <li class="tab col s4"><a href="#team">Our Team</a></li>
+      </ul>
     </div>
-    <div class="row">
-      <div class="col s12 m4 offset-m4 z-depth-2">
-        <div class="card ">
-          <div class="card-image container">
-            <img src="img/big_tire.png">
-          </div>
-          <div class="card-action center black">
-            <a class=" white-text" href="#">Our Team</a>
-          </div>
-        </div>
-      </div>
-    </div>
+    <div id="sustainability" class="col s12">Sustainability</div>
+    <div id="news" class="col s12">News</div>
+    <div id="team" class="col s12">Our Team</div>
   </div>
 </div>

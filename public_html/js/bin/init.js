@@ -3,6 +3,7 @@
     // initialize sidenav and parallax
     $('.sidenav').sidenav();
     $('.parallax').parallax();
+    $('.tabs').tabs();
 
     // initialize all modals
     $('.modal').modal();

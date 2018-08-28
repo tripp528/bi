@@ -261,6 +261,9 @@ nav .button-collapse i {
 .min-height-10 {
   min-height: 1000px; }
 
+.aboutTabs {
+  margin-top: 30px; }
+
 img.responsive-img {
   height: inherit;
   padding: 0;
