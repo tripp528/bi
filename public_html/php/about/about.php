@@ -9,8 +9,14 @@
         <li class="tab col s4"><a href="#team">Our Team</a></li>
       </ul>
     </div>
-    <div id="sustainability" class="col s12">Sustainability</div>
-    <div id="news" class="col s12">News</div>
-    <div id="team" class="col s12">Our Team</div>
+    <div id="sustainability" class="col s12"> Sustainability
+      <?php include 'php/about/sustainability.php' ?>
+    </div>
+    <div id="news" class="col s12"> News
+      <?php include 'php/about/news.php' ?>
+    </div>
+    <div id="team" class="col s12">Our Team
+      <?php include 'php/about/team.php' ?>
+    </div>
   </div>
 </div>

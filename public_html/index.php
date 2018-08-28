@@ -37,7 +37,7 @@
       include 'php/home.php';
       break;
     case 'products':
-      include 'php/products.php';
+      include 'php/products/products.php';
       break;
     case 'facility':
       include 'php/facility.php';
@@ -46,7 +46,7 @@
       include 'php/investors.php';
       break;
     case 'about':
-      include 'php/about.php';
+      include 'php/about/about.php';
       break;
     case 'contact':
       include 'php/contact.php';
@@ -54,8 +54,10 @@
 
     // product pages
     case 'bb':
-      include 'php/bb.php';
+      include 'php/products/bb.php';
       break;
+
+    // default
     default:
       include 'php/home.php';
       break;

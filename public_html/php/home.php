@@ -10,7 +10,7 @@
       <div class="col s12 m4 offset-m4 main-video-container">
         <div class="video-container z-depth-5">
           <iframe
-            src=""
+            src="https://player.vimeo.com/video/153284248"
             width="1000px"
             height="1000px"
             frameborder="0"
