@@ -4,14 +4,14 @@
     <div class="card">
       <div class="card-image">
         <img src="img/news/news1.jpg">
-        <span class="card-title">Card Title</span>
       </div>
       <div class="card-content">
+        <h5>Bolder Industries | Company Week</h5>
         <p>I am a very simple card. I am good at containing small bits of information.
         I am convenient because I require little markup to use effectively.</p>
       </div>
       <div class="card-action">
-        <a href="#">This is a link</a>
+        <a href="#">Read More</a>
       </div>
     </div>
   </div>
@@ -19,14 +19,14 @@
     <div class="card">
       <div class="card-image">
         <img src="img/news/news2.png">
-        <span class="card-title">Card Title</span>
       </div>
       <div class="card-content">
+        <h5>Carbon black firm gets bold new name, facility</h5>
         <p>I am a very simple card. I am good at containing small bits of information.
         I am convenient because I require little markup to use effectively.</p>
       </div>
       <div class="card-action">
-        <a href="#">This is a link</a>
+        <a href="#">Read More</a>
       </div>
     </div>
   </div>
@@ -34,14 +34,14 @@
     <div class="card">
       <div class="card-image">
         <img src="img/news/news3.jpg">
-        <span class="card-title">Card Title</span>
       </div>
       <div class="card-content">
+        <h5>Press Release: Bolder Industries| New Company Name</h5>
         <p>I am a very simple card. I am good at containing small bits of information.
         I am convenient because I require little markup to use effectively.</p>
       </div>
       <div class="card-action">
-        <a href="#">This is a link</a>
+        <a href="#">Read More</a>
       </div>
     </div>
   </div>
