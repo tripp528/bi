@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 
-<div class="container center impact-message">
-  <h2><b>100,000</b><br/>Saved</h2>
-</div>
 
-<div class="container ">
+  <div class="row center impact-message">
+    <div class="col s12 m5">
+      <div id="particles-js"></div>
+    </div>
+    <div class="col s12 m2">
+      <h2><b>100,000</b><br/>Saved</h2>
+    </div>
+    <div class="col s12 m5">
+      <div id="particles-js2"></div>
+    </div>
+  </div>
+
+
+<div class="container center">
     <div class="row no-margin">
       <!-- video src="https://player.vimeo.com/video/153284248"-->
       <div class="col s12 m4 offset-m4 main-video-container">
@@ -19,6 +29,13 @@
             allowfullscreen>
           </iframe>
         </div>
+      </div>
+      <div class="col s12 m3 offset-m1 z-depth-2">
+        <h6>
+          <a class="black-text">
+            <i><u>Calculate your potential impact</u></i>
+          </a>
+        </h6>
       </div>
     </div>
 </div>
@@ -84,3 +101,8 @@
     <img src="img/background/smoke2/v2.png" alt="Unsplashed background img 1">
   </div>
 </div>
+
+
+<!-- particle scripts -->
+<script src="js/particlejs/particles.js"></script>
+<script src="js/particlejs/app.js"></script>

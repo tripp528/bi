@@ -42,17 +42,15 @@ main {
 h6 {
   font-weight: bold; }
 
-.impact-message {
-  padding: 5vh;
-  margin-top: 0;
-  margin-bottom: 0; }
-  .impact-message h2 {
-    color: #333333;
-    margin: 0;
-    font-style: italic;
-    text-align: center; }
-    .impact-message h2 b {
-      color: #40bfaa; }
+.impact-message h2 {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  color: #333333;
+  margin: 0;
+  font-style: italic;
+  text-align: center; }
+  .impact-message h2 b {
+    color: #40bfaa; }
 
 .form-container {
   padding: 30px;
@@ -347,3 +345,10 @@ nav ul a.socialLink:hover .overlay {
 
 .leaflet-bottom.leaflet-right {
   display: none; }
+
+canvas {
+  display: block;
+  vertical-align: bottom; }
+
+#particles-js, #particles-js2 {
+  height: 200px; }

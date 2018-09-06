@@ -74,9 +74,6 @@
   <script src="js/bin/init.js"></script>
   <!-- form scripts -->
   <script src="php/phpform/form.js"></script>
-  <!-- map scripts -->
-  <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js" integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q==" crossorigin=""></script>
-  <script src="js/bin/map.js"></script>
 
   </body>
 </html>
