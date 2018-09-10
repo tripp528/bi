@@ -202,7 +202,7 @@ nav .button-collapse i {
 .no-pad {
   padding: 0; }
 
-.no-margin {
+.no-margin, .row.no-margin {
   margin: 0; }
 
 .col.no-pad {
@@ -339,7 +339,6 @@ body {
   background: #029B9A; }
 
 canvas {
-  display: block;
   vertical-align: bottom; }
 
 #aa_particles {
@@ -356,17 +355,18 @@ canvas {
   left: 0;
   margin: 0  auto; }
 
+.aa_col {
+  padding: 0; }
+
 .aa_txt {
-  font: 100 8vh/1.58 Roboto;
-  text-align: center;
+  font: 50px/1.58 Roboto;
   color: #029B9A; }
 
-.aa_inner {
+.aa_number {
   padding: 1rem;
-  text-transform: uppercase;
   background: #0C0636; }
 
-.aa_of {
+.aa_letter {
   padding: 1rem;
-  color: #0C0636;
-  background: #029190; }
+  background: #029190;
+  color: #0C0636; }

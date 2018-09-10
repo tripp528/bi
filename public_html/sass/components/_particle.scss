@@ -13,8 +13,7 @@ body
 
 canvas
 {
-    display: block;
-
+    //display: block;
     vertical-align: bottom;
 }
 
@@ -40,26 +39,24 @@ canvas
 
     margin: 0  auto;
 }
+
+.aa_col {
+  padding: 0;
+}
+
 .aa_txt
 {
-    font: 100 8vh/1.58 Roboto;
-
-    text-align: center;
-
+    font: 50px/1.58 Roboto;
     color: $particle_c1;
 }
-.aa_inner
+.aa_number
 {
     padding: 1rem;
-
-    text-transform: uppercase;
-
     background: $particle_c2;
 }
-.aa_of
+.aa_letter
 {
     padding: 1rem;
-
-    color: $particle_c2;
     background: $particle_c3;
+    color: $particle_c2;
 }

@@ -9,17 +9,19 @@ $font-size: 14px;
 $baseLineHeight: 1.5;
 $headingLineHeight: 1.2;
 
+//bi colors
+
 // Colors
 $black: rgba(51,51,51,1);
-$red: #d52b1e;
-$blue: #0f00b7;
-$pale: #d2e1dd;
-$blueTrans: transparentize(lightblue, .3 );
-$greyTrans: rgba(grey, .8 );
+$bi1: #9ED86C;
+$bi2: #53BA83;
+$bi3: #029B9A;
+$bi4: #1D6075;
+$bi5: #0C0636;
 //$c1 : #674172;
 //$particle_c1 : #476177;
-$particle_c1 : #029B9A;
-$particle_c2 : #0C0636;
+$particle_c1 : $bi3;
+$particle_c2 : $bi5;
 $particle_c3 : darken($particle_c1,2%);
 
 // Spacing
