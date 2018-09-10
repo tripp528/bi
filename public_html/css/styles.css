@@ -5,6 +5,7 @@
  *
  * Made By MaterializeCSS.com
  */
+@import url(https://fonts.googleapis.com/css?family=Roboto:100);
 p {
   line-height: 2rem; }
 
@@ -148,30 +149,6 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
     font-size: 24px;
     top: -26px; } }
 
-#modal-x {
-  position: absolute;
-  top: 0;
-  right: 0; }
-
-.modal {
-  display: none;
-  position: fixed;
-  left: 0;
-  right: 0;
-  background-color: #fafafa;
-  padding: 0;
-  max-height: 90%;
-  width: 60%;
-  margin: auto;
-  overflow-y: auto; }
-
-@media only screen and (max-width: 992px) {
-  .modal {
-    width: 100%;
-    max-width: 595px;
-    maxheight: 100%;
-    top: 0%; } }
-
 .footer-copyright {
   text-align: center; }
 
@@ -197,6 +174,11 @@ nav .button-collapse i {
   nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
     height: 84px;
     line-height: 84px; } }
+
+.head2 {
+  background-color: #029B9A; }
+  .head2 a {
+    color: #0C0636; }
 
 .container {
   margin: 0 auto;
@@ -346,9 +328,45 @@ nav ul a.socialLink:hover .overlay {
 .leaflet-bottom.leaflet-right {
   display: none; }
 
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html,
+body {
+  margin: 0;
+  background: #029B9A; }
+
 canvas {
   display: block;
   vertical-align: bottom; }
 
-#particles-js, #particles-js2 {
-  height: 200px; }
+#aa_particles {
+  z-index: 4;
+  height: 100%;
+  height: 100vh;
+  background: #029B9A; }
+
+.aa_sec {
+  position: absolute;
+  z-index: 5;
+  top: 30%;
+  right: 0;
+  left: 0;
+  margin: 0  auto; }
+
+.aa_txt {
+  font: 100 8vh/1.58 Roboto;
+  text-align: center;
+  color: #029B9A; }
+
+.aa_inner {
+  padding: 1rem;
+  text-transform: uppercase;
+  background: #0C0636; }
+
+.aa_of {
+  padding: 1rem;
+  color: #0C0636;
+  background: #029190; }

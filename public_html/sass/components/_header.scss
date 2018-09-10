@@ -23,3 +23,10 @@ nav .button-collapse i {
         line-height: $navHeight;
     }
 }
+
+.head2 {
+  background-color: $particle_c1;
+  a {
+    color: $particle_c2;
+  }
+}

@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 
 <div class="aboutTabs container ">
   <div class="row">

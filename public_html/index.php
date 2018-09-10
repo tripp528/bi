@@ -17,8 +17,7 @@
 <body class="white">
 
   <?php
-  // include header
-  include 'php/header.php';
+
 
   // set default page to home
   $current_page = 'home';
@@ -27,6 +26,9 @@
   if(array_key_exists('page',$_GET)) {
     $current_page = $_GET['page'];
   }
+  // include header
+  include 'php/header.php';
+
   echo "<main>";
   // switch pages
   switch ($current_page) {
@@ -57,13 +59,20 @@
       include 'php/products/bb.php';
       break;
 
+    // animations
+    case 'smoke':
+      include 'php/animations/smoke.php';
+      break;
+    case 'mapP5':
+      include 'php/animations/mapP5.php';
+      break;
+
     // default
     default:
       include 'php/home.php';
       break;
   }
   echo "</main>";
-
   // inclue footer
   include 'php/footer.php';
    ?>
@@ -74,6 +83,8 @@
   <script src="js/bin/init.js"></script>
   <!-- form scripts -->
   <script src="php/phpform/form.js"></script>
+  <!--count script-->
+  <script src="js/bin/count.js"></script>
 
   </body>
 </html>

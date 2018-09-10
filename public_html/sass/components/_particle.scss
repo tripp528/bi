@@ -1,9 +1,65 @@
-canvas {
-  display: block;
-  vertical-align: bottom;
+
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html,
+body
+{
+    margin: 0;
+  background: $particle_c1;
 }
 
-#particles-js,#particles-js2 {
-  //width: 100%;
-  height: 200px;
+canvas
+{
+    display: block;
+
+    vertical-align: bottom;
+}
+
+#aa_particles
+{
+    z-index: 4;
+
+    height: 100%;
+    height: 100vh;
+
+    background: $particle_c1;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:100);
+
+.aa_sec
+{
+    position: absolute;
+    z-index: 5;
+    top: 30%;
+    right: 0;
+    left: 0;
+
+    margin: 0  auto;
+}
+.aa_txt
+{
+    font: 100 8vh/1.58 Roboto;
+
+    text-align: center;
+
+    color: $particle_c1;
+}
+.aa_inner
+{
+    padding: 1rem;
+
+    text-transform: uppercase;
+
+    background: $particle_c2;
+}
+.aa_of
+{
+    padding: 1rem;
+
+    color: $particle_c2;
+    background: $particle_c3;
 }

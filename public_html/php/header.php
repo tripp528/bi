@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 
 <header>
-  <nav class="white z-depth-3" role="navigation">
+  
+  <?php
+  if ($current_page!='facility') {
+    echo "<nav class=\"white z-depth-3\" role=\"navigation\">";
+  } else {
+    echo "<nav class=\"head2 z-depth-3\" role=\"navigation\">";
+  }
+  ?>
+
     <div class="nav-wrapper container">
       <a href="index.php?page=template" class="brand-logo">
         <!-- CHANGE LOGO IMAGE -->

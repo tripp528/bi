@@ -16,6 +16,11 @@ $blue: #0f00b7;
 $pale: #d2e1dd;
 $blueTrans: transparentize(lightblue, .3 );
 $greyTrans: rgba(grey, .8 );
+//$c1 : #674172;
+//$particle_c1 : #476177;
+$particle_c1 : #029B9A;
+$particle_c2 : #0C0636;
+$particle_c3 : darken($particle_c1,2%);
 
 // Spacing
 $pad: 1em;

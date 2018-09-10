@@ -6,7 +6,7 @@
       <div id="particles-js"></div>
     </div>
     <div class="col s12 m2">
-      <h2><b>100,000</b><br/>Saved</h2>
+      <h2><b><span class="count">100000</span></b><br/>Saved</h2>
     </div>
     <div class="col s12 m5">
       <div id="particles-js2"></div>
@@ -103,6 +103,4 @@
 </div>
 
 
-<!-- particle scripts -->
-<script src="js/particlejs/particles.js"></script>
-<script src="js/particlejs/app.js"></script>
+<!-- scripts -->
