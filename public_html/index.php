@@ -20,7 +20,7 @@
 
 
   // set default page to home
-  $current_page = 'home';
+  $current_page = 'home2';
 
   // check what page
   if(array_key_exists('page',$_GET)) {
@@ -37,6 +37,9 @@
       break;
     case 'home':
       include 'php/home.php';
+      break;
+    case 'home2':
+      include 'php/home2.php';
       break;
     case 'products':
       include 'php/products/products.php';

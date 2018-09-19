@@ -1,24 +1,45 @@
 
+<!-- TODO: each col is a single line on mobile. Copy from header.php -->
 
-<div class="row aa_sec center">
+<!-- LARGE ONLY -->
+<div class="row aa_sec center hide-on-med-and-down">
   <div class="col s4 aa_col">
     <span class=" aa_txt aa_number count">11000</span> <br/>
-    <span class=" aa_txt aa_letter">tons of CO_2</span>
+    <span class=" aa_txt aa_letter">Tons of CO<sub>2</sub></span>
   </div>
 
   <div class="col s4 aa_col">
     <span class="aa_txt aa_number count ">174000000</span><br/>
-    <span class=" aa_txt aa_letter">gallons of water</span>
+    <span class=" aa_txt aa_letter">Gallons of Water</span>
   </div>
 
   <div class="col s4 aa_col">
     <span class=" aa_txt aa_number count">21000</span><br/>
-    <span class=" aa_txt aa_letter">MWh of energy</span>
+    <span class=" aa_txt aa_letter">MWh of Energy</span>
   </div>
 </div>
+
+
+<!-- MOBILE ONLY -->
+<div class="row aa_sec center hide-on-large-only">
+  <div class="col s12 aa_col">
+    <span class=" aa_txt aa_number count">11000</span>
+    <span class=" aa_txt aa_letter">Tons of CO<sub>2</sub></span>
+  </div>
+
+  <div class="col s12 aa_col">
+    <span class="aa_txt aa_number count ">174000000</span>
+    <span class=" aa_txt aa_letter">Gallons of Water</span>
+  </div>
+
+  <div class="col s12 aa_col">
+    <span class=" aa_txt aa_number count">21000</span>
+    <span class=" aa_txt aa_letter">MWh of Energy</span>
+  </div>
+</div>
+
+<!-- large and mobile -->
 <div id="aa_particles" class="z-depth-0"></div>
-
-
 
 
 

@@ -20,9 +20,10 @@ $bi4: #1D6075;
 $bi5: #0C0636;
 //$c1 : #674172;
 //$particle_c1 : #476177;
-$particle_c1 : $bi3;
+$particle_c1 : $bi4;
 $particle_c2 : $bi5;
-$particle_c3 : darken($particle_c1,2%);
+$particle_lighten : lighten($particle_c1,2%);
+$particle_darken : darken($particle_c1,2%);
 
 // Spacing
 $pad: 1em;

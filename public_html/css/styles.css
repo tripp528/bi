@@ -176,9 +176,9 @@ nav .button-collapse i {
     line-height: 84px; } }
 
 .head2 {
-  background-color: #029B9A; }
+  background-color: #1b596d; }
   .head2 a {
-    color: #0C0636; }
+    color: #aaaaaa; }
 
 .container {
   margin: 0 auto;
@@ -192,6 +192,10 @@ nav .button-collapse i {
 @media only screen and (min-width: 993px) {
   .container {
     width: 70%; } }
+
+@media only screen and (max-width: 1365px) {
+  .container {
+    width: 90%; } }
 
 .parallax-container {
   min-height: 100px;
@@ -281,7 +285,8 @@ img.responsive-img {
 
 .socialLink {
   padding: 0;
-  margin-left: 20px; }
+  margin-left: 10px;
+  margin-right: 10px; }
 
 .socialContainer {
   padding-left: 0; }
@@ -336,7 +341,7 @@ nav ul a.socialLink:hover .overlay {
 html,
 body {
   margin: 0;
-  background: #029B9A; }
+  background: #1D6075; }
 
 canvas {
   vertical-align: bottom; }
@@ -344,8 +349,8 @@ canvas {
 #aa_particles {
   z-index: 4;
   height: 100%;
-  height: 100vh;
-  background: #029B9A; }
+  height: 92vh;
+  background: #1D6075; }
 
 .aa_sec {
   position: absolute;
@@ -360,7 +365,8 @@ canvas {
 
 .aa_txt {
   font: 50px/1.58 Roboto;
-  color: #029B9A; }
+  font-weight: bolder;
+  color: white; }
 
 .aa_number {
   padding: 1rem;
@@ -368,5 +374,5 @@ canvas {
 
 .aa_letter {
   padding: 1rem;
-  background: #029190;
+  background: #1f677d;
   color: #0C0636; }
