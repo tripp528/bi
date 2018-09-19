@@ -47,7 +47,7 @@
 
 <!-- parallax container 2 -->
 <div class="parallax-container valign-wrapper min-height-2 hide-on-med-and-down">
-  <div class="parallax"><img src="img/big_tire.png" alt="Unsplashed background img 1"></div>
+  <div class="parallax"><img src="/img/big_tire.png" alt="Unsplashed background img 1"></div>
 </div>
 
 
