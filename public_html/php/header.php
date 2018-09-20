@@ -20,17 +20,26 @@
 
       <!-- LARGE ONLY -->
       <ul class="right hide-on-med-and-down height-inherit">
-        <!-- BUTTONS -->
         <li>
-          <!-- Dropdown Trigger -->
-          <a class='dropdown-trigger ' href='#' data-target='dropdown1'>Home</a>
-          <!-- Dropdown Structure -->
-          <ul id='dropdown1' class='dropdown-content'>
+          <!-- Home Dropdown Trigger -->
+          <a class='dropdown-trigger ' href='#' data-target='home-dropdown'>Home</a>
+          <!-- Home Dropdown Structure -->
+          <ul id='home-dropdown' class='dropdown-content'>
             <li><a href="index.php?page=home">Home 1</a></li>
             <li><a href="index.php?page=home2">Home 2</a></li>
           </ul>
         </li>
-        <li><a href="index.php?page=products">Products & Services</a></li>
+        <li>
+          <!-- Products Dropdown Trigger -->
+          <a class='dropdown-trigger ' href='#' data-target='products-dropdown'>Products & Services</a>
+          <!-- Products Dropdown Structure -->
+          <ul id='products-dropdown' class='dropdown-content'>
+            <a href="index.php?page=products">Products & Services</a>
+            <li><a href="index.php?page=bb">BolderBlack</a></li>
+            <li><a href="index.php?page=bb">BolderBlack</a></li>
+            <li><a href="index.php?page=bb">BolderBlack</a></li>
+          </ul>
+        </li>
         <li><a href="index.php?page=facility">Facility</a></li>
         <li><a href="index.php?page=investors">Investors</a></li>
         <li><a href="index.php?page=about">About Us</a></li>
@@ -52,8 +61,6 @@
             </a>
           </li>
         </li> <!-- end social -->
-
-
       </ul>
 
       <!-- MOBILE ONLY -->

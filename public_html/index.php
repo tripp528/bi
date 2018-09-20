@@ -11,8 +11,8 @@
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/styles.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="/css/styles.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body class="white">
 
@@ -86,8 +86,6 @@
   <script src="js/bin/init.js"></script>
   <!-- form scripts -->
   <script src="php/phpform/form.js"></script>
-  <!--count script-->
-  <script src="js/bin/count.js"></script>
 
   </body>
 </html>

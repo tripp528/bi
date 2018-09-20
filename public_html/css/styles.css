@@ -338,11 +338,6 @@ nav ul a.socialLink:hover .overlay {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-html,
-body {
-  margin: 0;
-  background: #1D6075; }
-
 canvas {
   vertical-align: bottom; }
 
