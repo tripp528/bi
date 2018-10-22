@@ -3,23 +3,24 @@
 
 <!-- LARGE ONLY -->
 <div class="row aa_sec center hide-on-med-and-down">
-  <div class="col s4 aa_col">
-    <span class=" aa_txt aa_number count">11000</span> <br/>
-    <span class=" aa_txt aa_letter">Tons of CO<sub>2</sub></span>
+  <div class="row no-margin no-pad">
+    <div class="col s4 aa_col">
+      <span class=" aa_txt aa_number count">11000</span> <br/>
+      <span class=" aa_txt aa_letter">Tons of CO<sub>2</sub></span>
+    </div>
+
+    <div class="col s4 aa_col">
+      <span class="aa_txt aa_number count ">174000000</span><br/>
+      <span class=" aa_txt aa_letter">Gallons of Water</span>
+    </div>
+
+    <div class="col s4 aa_col">
+      <span class=" aa_txt aa_number count">21000</span><br/>
+      <span class=" aa_txt aa_letter">MWh of Energy</span>
+    </div>
   </div>
 
-  <div class="col s4 aa_col">
-    <span class="aa_txt aa_number count ">174000000</span><br/>
-    <span class=" aa_txt aa_letter">Gallons of Water</span>
-  </div>
-
-  <div class="col s4 aa_col">
-    <span class=" aa_txt aa_number count">21000</span><br/>
-    <span class=" aa_txt aa_letter">MWh of Energy</span>
-  </div>
 </div>
-
-
 <!-- MOBILE ONLY -->
 <div class="row aa_sec center hide-on-large-only">
   <div class="col s12 aa_col">
@@ -40,41 +41,21 @@
 
 <!-- large and mobile -->
 <div id="aa_particles" class="z-depth-0"></div>
-
-
-
-
-<!-- rows:
-<div class="row aa_sec center">
-  <div class="col s4 aa_col">
-    <div class="row aa_number no-margin">
-      <span class=" aa_txt count">11000</span> <br/>
+  <div class="container">
+  <div class="col s12 m4 offset-m4 main-video-container">
+    <div class="video-container z-depth-5">
+      <iframe
+        src="https://player.vimeo.com/video/153284248"
+        width="1000px"
+        height="1000px"
+        frameborder="0"
+        webkitallowfullscreen
+        mozallowfullscreen
+        allowfullscreen>
+      </iframe>
     </div>
-    <div class="row aa_letter no-margin">
-      <span class=" aa_txt ">tons of CO_2</span>
-    </div>
-  </div>
-
-  <div class="col s4 aa_col">
-    <div class="row aa_number no-margin">
-      <span class="aa_txt count ">174000000</span><br/>
-    </div>
-    <div class="row aa_letter no-margin">
-      <span class=" aa_txt ">gallons of water</span>
-    </div>
-  </div>
-
-  <div class="col s4 aa_col">
-  <div class="row aa_number no-margin">
-    <span class=" aa_txt count">21000</span><br/>
-  </div>
-  <div class="row aa_letter no-margin">
-    <span class=" aa_txt ">MWh of energy</span>
-  </div>
   </div>
 </div>
-<div id="aa_particles" class="z-depth-0"></div>
--->
 
 <!-- particle scripts -->
 <script src="js/particlejs/particles.js"></script>

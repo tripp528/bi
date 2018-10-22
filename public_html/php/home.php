@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 
 
-  <div class="row center impact-message">
-    <div class="col s12 m5">
-      <div id="particles-js"></div>
-    </div>
-    <div class="col s12 m2">
-      <h2><b><span class="count">100000</span></b><br/>Saved</h2>
-    </div>
-    <div class="col s12 m5">
-      <div id="particles-js2"></div>
-    </div>
+<div class="row center impact-message">
+  <div class="col s12 m5">
+    <div id="particles-js"></div>
   </div>
+  <div class="col s12 m2">
+    <h2><b><span class="count">100000</span></b><br/>Saved</h2>
+  </div>
+  <div class="col s12 m5">
+    <div id="particles-js2"></div>
+  </div>
+</div>
 
 
 <div class="container center">
